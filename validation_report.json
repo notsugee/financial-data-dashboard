@@ -1,0 +1,375 @@
+[
+    {
+        "file": "customer_trade_data_V3_image.pdf",
+        "success": 283,
+        "errors": 12,
+        "error_details": [
+            {
+                "record_number": 11,
+                "record": {
+                    "tradeid": "1011",
+                    "tradedate": "1/15/2021",
+                    "instrument": "Crypto",
+                    "symbol": "ETHUSD",
+                    "tradetype": "{Sell",
+                    "quantity": "106",
+                    "price": "474.15",
+                    "customerid": "413289",
+                    "tradevalue": "50259.9",
+                    "fee": "115.78.",
+                    "netvalue": "50144.12",
+                    "pnl": "6006.06",
+                    "settlementdate": "1/17/2021",
+                    "riskcategory": "High"
+                },
+                "errors": [
+                    {
+                        "type": "value_error",
+                        "loc": [
+                            "fee"
+                        ],
+                        "msg": "Value error, could not convert string to float: '115.78.'",
+                        "input": "115.78.",
+                        "ctx": {
+                            "error": "could not convert string to float: '115.78.'"
+                        },
+                        "url": "https://errors.pydantic.dev/2.11/v/value_error"
+                    }
+                ]
+            },
+            {
+                "record_number": 31,
+                "record": {
+                    "tradeid": "1031",
+                    "tradedate": "2/12/2021",
+                    "instrument": "FX",
+                    "symbol": "GOOG",
+                    "tradetype": "Buy",
+                    "quantity": "126",
+                    "price": "1084.51",
+                    "customerid": "413309,",
+                    "tradevalue": "186648.26",
+                    "fee": "400.3}",
+                    "netvalue": "186247.96",
+                    "pnl": "10016.32",
+                    "settlementdate": "2/14/2021",
+                    "riskcategory": "Medium"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "413309,",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 61,
+                "record": {
+                    "tradeid": "1062",
+                    "tradedate": "3/29/2021",
+                    "instrument": "Crypto",
+                    "symbol": "ETHUSD",
+                    "tradetype": "{Sell",
+                    "quantity": "403/",
+                    "price": "1793.29",
+                    "customerid": "413339,",
+                    "tradevalue": "722695.87",
+                    "fee": "2632.98",
+                    "netvalue": "720062.89",
+                    "pnl": "41555.01",
+                    "settlementdate": "3/31/2021",
+                    "riskcategory": "High"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "413339,",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 81,
+                "record": {
+                    "tradeid": "1083",
+                    "tradedate": "4/27/2021",
+                    "instrument": "Derivative",
+                    "symbol": "ETHUSD",
+                    "tradetype": "{Sell",
+                    "quantity": "942.34",
+                    "price": "413359",
+                    "customerid": "869779.82",
+                    "tradevalue": "3142.56",
+                    "fee": "866637.26/",
+                    "netvalue": "-38879.16",
+                    "pnl": "4/29/2021",
+                    "settlementdate": "High",
+                    "riskcategory": null
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "869779.82",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 93,
+                "record": {
+                    "tradeid": "1055,",
+                    "tradedate": "5/13/2021",
+                    "instrument": "Stock",
+                    "symbol": "AMZN",
+                    "tradetype": "Buy",
+                    "quantity": "48",
+                    "price": "785.5",
+                    "customerid": "413371",
+                    "tradevalue": "37704",
+                    "fee": "100.43",
+                    "netvalue": "37603.57",
+                    "pnl": "-2262.24",
+                    "settlementdate": "5/17/2021",
+                    "riskcategory": "Medium"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "tradeid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "1055,",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 102,
+                "record": {
+                    "tradeid": "1104,",
+                    "tradedate": "5/26/2021",
+                    "instrument": "Bond",
+                    "symbol": "EURUSD",
+                    "tradetype": "Sell",
+                    "quantity": "253",
+                    "price": "1042.12",
+                    "customerid": "413380",
+                    "tradevalue": "263656.36",
+                    "fee": "294.66",
+                    "netvalue": "263361.7",
+                    "pnl": "-8015.15",
+                    "settlementdate": "5/28/2021",
+                    "riskcategory": "Medium"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "tradeid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "1104,",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 153,
+                "record": {
+                    "tradeid": "1156",
+                    "tradedate": "8/6/2021",
+                    "instrument": "Stock",
+                    "symbol": "ETHUSD",
+                    "tradetype": "_",
+                    "quantity": "Sell",
+                    "price": "25",
+                    "customerid": "2101.07",
+                    "tradevalue": "413431",
+                    "fee": "52526.75",
+                    "netvalue": "164.62",
+                    "pnl": "52362.13",
+                    "settlementdate": "-2773.41",
+                    "riskcategory": "8/8/2021"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "2101.07",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 177,
+                "record": {
+                    "tradeid": "1181",
+                    "tradedate": "9/10/2021",
+                    "instrument": "Stock",
+                    "symbol": "ETHUSD",
+                    "tradetype": "/",
+                    "quantity": "Sell",
+                    "price": "738",
+                    "customerid": "2121.84",
+                    "tradevalue": "413455",
+                    "fee": "1565917.92",
+                    "netvalue": "5199.55",
+                    "pnl": "1560718.37",
+                    "settlementdate": "-113842.23",
+                    "riskcategory": "9/13/2021"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "2121.84",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 224,
+                "record": {
+                    "tradeid": "1229",
+                    "tradedate": "11/17/2021",
+                    "instrument": "FX",
+                    "symbol": "TSLA",
+                    "tradetype": "Sell",
+                    "quantity": "947",
+                    "price": "1833.14",
+                    "customerid": "413502}",
+                    "tradevalue": "—1735983.58",
+                    "fee": "7832",
+                    "netvalue": "1728151.58",
+                    "pnl": "-214046.73",
+                    "settlementdate": "11/20/2021",
+                    "riskcategory": "Medium"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "413502}",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 238,
+                "record": {
+                    "tradeid": "1244",
+                    "tradedate": "12/8/2021",
+                    "instrument": "FX",
+                    "symbol": "EURUSD",
+                    "tradetype": "Buy",
+                    "quantity": "836",
+                    "price": "2094.33",
+                    "customerid": "413516}",
+                    "tradevalue": "1750859.88",
+                    "fee": "1853.58",
+                    "netvalue": "1749006.3",
+                    "pnl": "8929.39",
+                    "settlementdate": "12/11/2021",
+                    "riskcategory": "Medium"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "413516}",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 243,
+                "record": {
+                    "tradeid": "1249",
+                    "tradedate": "12/15/2021",
+                    "instrument": "Crypto",
+                    "symbol": "EURUSD",
+                    "tradetype": "/",
+                    "quantity": "Sell",
+                    "price": "113",
+                    "customerid": "2373.77",
+                    "tradevalue": "413521",
+                    "fee": "268236.01",
+                    "netvalue": "805.19",
+                    "pnl": "267430.82",
+                    "settlementdate": "35058.45",
+                    "riskcategory": "12/19/2021"
+                },
+                "errors": [
+                    {
+                        "type": "int_parsing",
+                        "loc": [
+                            "customerid"
+                        ],
+                        "msg": "Input should be a valid integer, unable to parse string as an integer",
+                        "input": "2373.77",
+                        "url": "https://errors.pydantic.dev/2.11/v/int_parsing"
+                    }
+                ]
+            },
+            {
+                "record_number": 270,
+                "record": {
+                    "tradeid": "1275",
+                    "tradedate": "1/20/2022",
+                    "instrument": "FX",
+                    "symbol": "BICUSD",
+                    "tradetype": "Buy",
+                    "quantity": "642",
+                    "price": "793.35.",
+                    "customerid": "413548",
+                    "tradevalue": "509330.7",
+                    "fee": "848.2",
+                    "netvalue": "508482.5",
+                    "pnl": "~64073.8",
+                    "settlementdate": "1/22/2022",
+                    "riskcategory": null
+                },
+                "errors": [
+                    {
+                        "type": "value_error",
+                        "loc": [
+                            "price"
+                        ],
+                        "msg": "Value error, could not convert string to float: '793.35.'",
+                        "input": "793.35.",
+                        "ctx": {
+                            "error": "could not convert string to float: '793.35.'"
+                        },
+                        "url": "https://errors.pydantic.dev/2.11/v/value_error"
+                    }
+                ]
+            }
+        ]
+    }
+]

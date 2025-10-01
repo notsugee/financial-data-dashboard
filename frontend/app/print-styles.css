@@ -1,0 +1,82 @@
+/* Print styles */
+@media print {
+  /* Hide non-printable elements */
+  button, 
+  .print-hidden,
+  nav:not(.print-visible),
+  header:not(.print-visible),
+  .sidebar,
+  .app-sidebar,
+  .sidebar-inset > :first-child {
+    display: none !important;
+  }
+  
+  /* Ensure proper page breaks */
+  .page-break {
+    page-break-after: always;
+    break-after: page;
+  }
+  
+  /* Make sure content is visible */
+  body, html, main, div {
+    /* Don't override colors to preserve the original colors */
+    font-family: sans-serif !important;
+    font-size: 12pt !important;
+    overflow: visible !important;
+  }
+  
+  /* Force color printing */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  
+  /* Ensure charts and tables render properly */
+  canvas, svg, img {
+    max-width: 100% !important;
+    page-break-inside: avoid !important;
+  }
+  
+  /* Better table handling */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    page-break-inside: auto;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  thead {
+    display: table-header-group;
+  }
+  
+  tr {
+    page-break-inside: avoid;
+  }
+  
+  /* Add title if needed */
+  body.printing-pdf::before {
+    content: attr(data-print-title);
+    display: block;
+    font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Add helpful footer */
+  body.printing-pdf::after {
+    content: "Generated on " attr(data-print-date);
+    display: block;
+    font-size: 9pt;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 5px;
+  }
+}
